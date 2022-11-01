@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Contact Us</h1>
+<p>To know more about us reach out by filling this form</p>
+<form>
+    <div>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+</div>
+
+<div> </div>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname">
+</div>
+
+</form>
+
+<hr> horizontal
+<form> 
+<a>
+<textarea>
+<input>
+</body>
+</html>
