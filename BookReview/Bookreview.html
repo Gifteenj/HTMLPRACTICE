@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BookReview</title>
+    </head>
+    <body>
+        
+        <div class="container">
+            <td>
+            <img src="Images/Bookreview.jpg" alt="Book Review" style="width:830px;height:250px;">
+            <input type="checkbox" class="read-more-state" id="post" />
+        </td>
+        <tr> 
+            <p class="read-more-wrap">This book is FABULOUS!
+                 I was looking for nonfiction read aloud for my son who's 7 that would also interest me. 
+                 It's 48 pages and there's a lot of text on each spread, which I initially worried might be too much or not paced well.
+                <span class="read-more-target"> I was wrong! The writing is lively, fun, and perfectly crafted. The illustrations amp up the humor and helped us absorb the concepts. The anecdotes and examples also build from the silly/comical toward trends with more dire consequences, but the book finishes with an uplifting spread about how to use what you've learned to do good in the world! LOVE!
+
+                As an adult, if you've enjoyed the pop psychology books like Thinking Fast and Slow or Predictably Irrational and the like, you'll enjoy this book. For kids, I think it's critical that we arm them with the ability to spot fads and trends and to think critically about them. This book delivers. It's thought provoking, and I was entertained from start to finish.
+            </p>
+        
+            <label for="post" class="read-more-trigger"></label>
+        </tr>
+        </div>
+    
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .container {
+                max-width: 80%;
+                margin-top: 50px;
+                margin-left: 10%;
+            }
+            p {
+                padding: 15px;
+                font-size: 25px;
+                border-radius: 5px;
+                border: 1px solid #ccc9c3;
+
+            }
+            .read-more-state {
+                display: none;
+            }
+            .read-more-target {
+                max-height: 0;
+                opacity: 0;
+                font-size: 0;
+                transition: 0.45s ease;
+            }
+            .read-more-state:checked~.read-more-wrap .read-more-target {
+                opacity: 1;
+                font-size: inherit;
+                        }
+                        .read-more-state~.read-more-trigger:before {
+                            content: 'Read More';
+                        }
+                        .read-more-state~.read-more-trigger:before {
+                            content: 'Read More';
+                        }
+                        .read-more-trigger {
+                            margin-top: 20px;
+                            padding: 0 25px;
+                            display: inline-block;
+                            cursor: pointer;
+                            font-size: 20px;
+                            line-height: 2;
+                            border-radius: 1opx;
+                            background-color: aquamarine;
+                        }
+        </style>
+    
+    </body>
+</html>
